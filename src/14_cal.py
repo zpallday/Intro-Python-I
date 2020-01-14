@@ -23,9 +23,14 @@ import sys
 import calendar
 from datetime import datetime
 
-today = datetime.today()
+try:
+    y = int(input("Input the year : "))
+except:
+    y = datetime.now().year
 
-def statement(month=today.month, year=today.year): 
-   print(calendar.month(year, month)) 
-statement()
- 
+try:
+    m = int(input("Input the month : "))
+except:
+    m = datetime.now().month
+
+print(calendar.month(y, m))
