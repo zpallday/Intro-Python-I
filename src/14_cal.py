@@ -32,5 +32,5 @@ try:
     m = int(input("Input the month : "))
 except:
     m = datetime.now().month
-
+    
 print(calendar.month(y, m))
