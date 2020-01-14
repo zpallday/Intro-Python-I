@@ -20,5 +20,5 @@ with open('foo.txt') as f:
 
 # YOUR CODE HERE
 f = open("bar.txt", "w+")
-f.write("Line 1. \nLine 2. \nLine 3. \n")
+f.write("Line 1 \nLine 2 \nLine 3 \nLine 100 \n")
 f.close()
